@@ -45,14 +45,15 @@ convert -size 32x32 %{name}.xpm $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
 convert -size 48x48 %{name}.xpm $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
 
 # menu
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="garlic"\
-needs="x11"\
-section="Applications/Sciences/Chemistry"\
-title="Garlic"\
-icon="%{name}.png"\
-longtitle="3D Molecule Viewer"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=garlic
+Categories=Science;Chemistry;
+Name=Garlic
+Icon=%{name}
+Comment=3D Molecule Viewer
 EOF
 
 %post 
@@ -70,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_libdir}/%{name}
 %{_mandir}/man1/*
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_liconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
