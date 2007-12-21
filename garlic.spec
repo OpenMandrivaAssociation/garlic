@@ -13,6 +13,7 @@ Source1: 	%{name}-%{version}-doc.tar.bz2
 Source2:	%{name}.1.bz2
 URL: 		http://garlic.mefos.hr/sources
 BuildRequires: 	ImageMagick X11-devel
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Garlic is a full-featured molecular viewer and editor.  It is 
