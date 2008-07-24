@@ -1,6 +1,6 @@
 %define name 	garlic
 %define version 1.6
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name: 		%{name}
 Version: 	%{version}
