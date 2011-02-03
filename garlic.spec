@@ -1,6 +1,6 @@
 %define name 	garlic
 %define version 1.6
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 		%{name}
 Version: 	%{version}
@@ -12,7 +12,7 @@ Source0: 	%{name}-%{version}.tar.bz2
 Source1: 	%{name}-%{version}-doc.tar.bz2
 Source2:	%{name}.1.bz2
 URL: 		http://garlic.mefos.hr/sources
-BuildRequires: 	imagemagick X11-devel
+BuildRequires: 	imagemagick libx11-devel
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
