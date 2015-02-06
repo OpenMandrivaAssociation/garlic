@@ -1,7 +1,7 @@
 Summary:	Free molecular viewer and editor
 Name:		garlic
 Version:	1.6
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Sciences/Chemistry
 Url:		http://garlic.mefos.hr/sources
