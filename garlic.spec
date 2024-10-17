@@ -4,7 +4,7 @@ Version:	1.6
 Release:	8
 License:	GPLv2+
 Group:		Sciences/Chemistry
-Url:		http://garlic.mefos.hr/sources
+Url:		https://garlic.mefos.hr/sources
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-%{version}-doc.tar.bz2
 Source2:	%{name}.1.bz2
