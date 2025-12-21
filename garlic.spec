@@ -8,6 +8,7 @@ Url:		https://garlic.mefos.hr/sources
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-%{version}-doc.tar.bz2
 Source2:	%{name}.1.bz2
+BuildRequires:	make
 BuildRequires:	imagemagick
 BuildRequires:	pkgconfig(x11)
 
